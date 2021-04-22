@@ -1,0 +1,58 @@
+<html>
+
+<head>
+    <title>Insert Audio Device</title>
+    <h1>Insert Audio Device</h1>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/assets/css/style.css"> 
+</head>
+<body>
+    <div class="form-container">
+        <form action="/api/v1/audioServices/insertAudioDevice" method="POST">
+
+            <div class="form-group">
+            <label for="deviceName">Device Name</label>
+            <input type="text" id="sName" class="inputs" name="sName" placeholder="string" required>
+            </div>
+
+            <div class="form-group">
+                <label for="deiceModel">Device Model</label>
+                <input type="text" id="sModel" class="inputs" name="sModel" placeholder="string" required>
+            </div>
+
+            <div class="form-group">
+            <label for="deviceBrand">Device Brand</label>
+            <input type="text" id="sBrand" class="inputs" name="sBrand" placeholder="string" required>
+            </div>
+
+            <div class="form-group">
+            <label for="deviceBrand">Connector Type</label>
+            <input type="text" id="sConnectorType" class="inputs" name="sConnectorType" placeholder="string" required>
+            </div>
+
+            <div class="form-group">
+            <label for="microphone">Microphone</label>
+            <input type="text" id="sMicrophone" class="inputs" name="sMicrophone" placeholder="string" required>
+            </div>
+
+            <div class="form-group">
+            <label for="color">Color</label>
+            <input type="text" id="sColor" class="inputs" name="sColor" placeholder="string" required>
+            </div>
+
+            <div class="form-group">
+            <label for="weight">Weight</label>s
+            <input type="number" id="nWeight" class="inputs" name="nWeight" placeholder="number" required>
+            </div>
+
+            <div class="form-group">
+            <label for="price">Price</label>
+            <input type="number" id="nPrice" class="inputs" name="nPrice" placeholder="number" required>
+            </div>
+
+            <button type="submit" color="white" id="">ADD DEVICE</button>
+        </form>
+    </div>   
+</body>
+
+</html>

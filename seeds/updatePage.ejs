@@ -1,0 +1,62 @@
+<html>
+
+<head>
+    <title>Update Audio Device</title>
+    <h1>Update Audio Device</h1>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+    <div class="form-container">
+        <form action="/api/v1/audioServices/updateAudioDevice" type="hidden" method="POST">
+            <div class="form-group">
+            <label for="deviceName">Device Id</label>
+            <input type="text" id="sId" name="sId" placeholder="string" required>
+            </div>
+
+            <div class="form-group">
+            <label for="deiceModel">Device Name</label>
+            <input type="text" id="sName" name="sName" placeholder="string" required>
+            </div>
+
+            <div class="form-group">
+            <label for="deviceBrand">Device Model</label>
+            <input type="text" id="sModel" name="sModel" placeholder="string" required>
+            </div>
+
+            <div class="form-group">
+            <label for="deviceBrand">Device Brand</label>
+            <input type="text" id="sBrand" name="sBrand" placeholder="string" required>
+            </div>
+
+            <div class="form-group">
+            <label for="deviceBrand">Connector Type</label>
+            <input type="text" id="sConnectorType" name="sConnectorType" placeholder="string" required>
+            </div>
+
+            <div class="form-group">
+            <label for="microphone">Microphone</label>
+            <input type="text" id="sMicrophone" name="sMicrophone" placeholder="string" required>
+            </div>
+
+            <div class="form-group">
+            <label for="deviceModelName">Color</label>
+            <input type="text" id="sColor" name="sColor" placeholder="string" required>
+            </div>
+
+            <div class="form-group">
+            <label for="weight">Weight</label>
+            <input type="number" id="nWeight" name="nWeight" placeholder="number" required>
+            </div>
+
+            <div class="form-group">
+            <label for="price">Price</label>
+            <input type="number" id="nPrice" name="nPrice" placeholder="number" required>
+            </div>
+
+            <button type="submit" color="white">Update</button>
+        </form>
+    </div>
+</body>
+
+</html>

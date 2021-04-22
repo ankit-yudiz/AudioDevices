@@ -1,0 +1,52 @@
+<html>
+<body>
+    <style>
+        div {
+            height: fit-content;
+            width: fit-content;
+            background-color: blanchedalmond;
+            padding: 10px;
+        }
+        table {
+            align-items: center;
+            margin: auto;
+        }
+        table,
+        td,
+        th {
+            padding: 7px;
+            border: 1px solid black;
+        }
+    </style>
+    <div>
+        <table>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Model</th>
+                <th>Brand</th>
+                <th>Connector Type</th>
+                <th>Microphone</th>
+                <th>Color</th>
+                <th>Weight</th>
+                <th>Price</th>
+            </tr>
+            <% aList.forEach(function(jDevice){ %>
+            <tr>
+                <td><%= jDevice._id %></td>
+                <td><%= jDevice.sName %></td>
+                <td><%= jDevice.sModel %></td>
+                <td><%= jDevice.sBrand %></td>
+                <td><%= jDevice.sConnectorType %></td>
+                <td><%= jDevice.sMicrophone %></td>
+                <td><%= jDevice.sColor %></td>
+                <td><%= jDevice.nItem_wgt+" g" %></td>
+                <td><%= "Rs. "+jDevice.nPrice %></td>
+            </tr>
+            <% }) %>
+        </table>
+    </div>
+    </table>
+</body>
+
+</html>
